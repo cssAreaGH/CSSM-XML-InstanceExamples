@@ -1,0 +1,152 @@
+<!-- Example of an XML instance document conforming to the CCSDS Standard 902.2 (Communications Planning Information Format) -->
+<!-- The XML schema against which this validates can be found in the SANA (Spacecraft Assigned Numbers Authority) registry for Cross Support service management schemas, located at  https://sanaregistry.org/r/service_management_xml_schemas/  -->
+<!-- This example demonstrates stating communicaiton geometry for a Mars spacecraft being trakced from an aperture on earth and is hypothetical; ie., the numbers shown are not necessarily correct or accurate; rather this to illustrate the structure for exchange in a CCSDS format -->
+<commsPlanningInfo xmlns="urn:ccsds:schema:cssm:1.0.0"
+    xsi:schemaLocation="urn:ccsds:schema:cssm:1.0.0 902x02b1-CommsPlnInfo.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xmi="http://www.omg.org/XMI">
+<commsPlanningInfoHeader
+  originatingOrganization="Agency01-Nav"
+  generationTime="2022-109T09:29:48"
+  version="1"
+  startTime="2022-091T02:35:00"
+  endTime="2022-093T05:15:00"
+  commsPlanningInfoStatus="TEST"
+  trajectoryRef="MarsSC-OEM-489AF3CB7-ExampleOnly.xml">
+ <planningInfoTypeList>
+  <planningInfoType>COMMS</planningInfoType> 
+ </planningInfoTypeList>
+</commsPlanningInfoHeader>
+<commsPlanningInfoData>
+<elevationAscendingEvent user="MarsSC" identifier="Aperture01_92_1" type="COMMS" elevation="6.0" azimuth="68.1" rtlt="2021.055535">
+ <srvMgtEventTime absoluteTime="2022-091T16:30:27" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</elevationAscendingEvent>
+<retCommsStartEvent user="MarsSC" identifier="Aperture01_92_2" type="COMMS" elevation="6.0" azimuth="68.1" rtlt="2021.055535">
+ <srvMgtEventTime absoluteTime="2022-091T16:30:27" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</retCommsStartEvent>
+<rtltEvent user="MarsSC" identifier="Aperture01_92_3" type="COMMS" elevation="6.0" azimuth="68.1" rtlt="2021.055535">
+ <srvMgtEventTime absoluteTime="2022-091T16:30:27" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</rtltEvent>
+<fwdCommsStartEvent user="MarsSC" identifier="Aperture01_92_4" type="COMMS" elevation="10.3" azimuth="71.1" rtlt="2021.163171">
+ <srvMgtEventTime absoluteTime="2022-091T16:53:12" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</fwdCommsStartEvent>
+<occultationStartEvent user="MarsSC" identifier="Aperture01_92_5" type="COMMS" elevation="20.7" azimuth="78.0" rtlt="2021.466447"
+ celestialBody="Mars">
+ <srvMgtEventTime absoluteTime="2022-091T17:46:09" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</occultationStartEvent>
+<occultationEndEvent user="MarsSC" identifier="Aperture01_92_6" type="COMMS" elevation="25.2" azimuth="80.9" rtlt="2021.584722"
+ celestialBody="Mars">
+ <srvMgtEventTime absoluteTime="2022-091T18:08:45" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</occultationEndEvent>
+<occultationStartEvent user="MarsSC" identifier="Aperture01_92_7" type="COMMS" elevation="44.6" azimuth="94.3" rtlt="2022.087145"
+ celestialBody="Mars">
+ <srvMgtEventTime absoluteTime="2022-091T19:44:06" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</occultationStartEvent>
+<occultationEndEvent user="MarsSC" identifier="Aperture01_92_8" type="COMMS" elevation="49.2" azimuth="98.1" rtlt="2022.206987"
+ celestialBody="Mars">
+ <srvMgtEventTime absoluteTime="2022-091T20:06:53" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</occultationEndEvent>
+<occultationStartEvent user="MarsSC" identifier="Aperture01_92_9" type="COMMS" elevation="67.4" azimuth="123.1" rtlt="2022.712222"
+ celestialBody="Mars">
+ <srvMgtEventTime absoluteTime="2022-091T21:41:59" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</occultationStartEvent>
+<occultationEndEvent user="MarsSC" identifier="Aperture01_92_10" type="COMMS" elevation="71.1" azimuth="134.2" rtlt="2022.834354"
+ celestialBody="Mars">
+ <srvMgtEventTime absoluteTime="2022-091T22:04:58" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</occultationEndEvent>
+<maximumElevationEvent user="MarsSC" identifier="Aperture01_92_11" type="COMMS" elevation="76.0" azimuth="180.0" rtlt="2023.120807">
+ <srvMgtEventTime absoluteTime="2022-091T23:02:39" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</maximumElevationEvent>
+<rtltEvent user="MarsSC" identifier="Aperture01_92_12" type="COMMS" elevation="76.0" azimuth="180.0" rtlt="2023.120807">
+ <srvMgtEventTime absoluteTime="2022-091T23:02:39" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</rtltEvent>
+<occultationStartEvent user="MarsSC" identifier="Aperture01_92_13" type="COMMS" elevation="73.8" azimuth="212.6" rtlt="2023.344180"
+ celestialBody="Mars">
+ <srvMgtEventTime absoluteTime="2022-091T23:39:46" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</occultationStartEvent>
+<occultationEndEvent user="MarsSC" identifier="Aperture01_92_14" type="COMMS" elevation="70.7" azimuth="227.3" rtlt="2023.469345"
+ celestialBody="Mars">
+ <srvMgtEventTime absoluteTime="2022-092T00:03:01" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</occultationEndEvent>
+<occultationStartEvent user="MarsSC" identifier="Aperture01_92_15" type="COMMS" elevation="53.4" azimuth="258.0" rtlt="2023.984587"
+ celestialBody="Mars">
+ <srvMgtEventTime absoluteTime="2022-092T01:37:37" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</occultationStartEvent>
+<occultationEndEvent user="MarsSC" identifier="Aperture01_92_16" type="COMMS" elevation="48.7" azimuth="262.4" rtlt="2024.112664"
+ celestialBody="Mars">
+ <srvMgtEventTime absoluteTime="2022-092T02:01:07" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</occultationEndEvent>
+<occultationStartEvent user="MarsSC" identifier="Aperture01_92_18" type="COMMS" elevation="29.5" azimuth="276.4" rtlt="2024.632153"
+ celestialBody="Mars">
+ <srvMgtEventTime absoluteTime="2022-092T03:35:32" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</occultationStartEvent>
+<occultationEndEvent user="MarsSC" identifier="Aperture01_92_19" type="COMMS" elevation="24.7" azimuth="279.5" rtlt="2024.762351"
+ celestialBody="Mars">
+ <srvMgtEventTime absoluteTime="2022-092T03:59:14" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</occultationEndEvent>
+<fwdCommsEndEvent user="MarsSC" identifier="Aperture01_92_20" type="COMMS" elevation="10.3" azimuth="289.0" rtlt="2025.152200">
+ <srvMgtEventTime absoluteTime="2022-092T05:12:15" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</fwdCommsEndEvent>
+<occultationStartEvent user="MarsSC" identifier="Aperture01_92_21" type="COMMS" elevation="6.3" azimuth="291.8" rtlt="2025.283216"
+ celestialBody="Mars">
+ <srvMgtEventTime absoluteTime="2022-092T05:33:28" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</occultationStartEvent>
+<retCommsEndEvent user="MarsSC" identifier="Aperture01_92_22" type="COMMS" elevation="6.0" azimuth="292.0" rtlt="2025.292491">
+ <srvMgtEventTime absoluteTime="2022-092T05:35:02" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</retCommsEndEvent>
+<elevationDescendingEvent user="MarsSC" identifier="Aperture01_92_23" type="COMMS" elevation="6.0" azimuth="292.0" rtlt="2025.292491">
+ <srvMgtEventTime absoluteTime="2022-092T05:35:02" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</elevationDescendingEvent>
+<rtltEvent user="MarsSC" identifier="Aperture01_92_24" type="COMMS" elevation="6.0" azimuth="292.0" rtlt="2025.292491">
+ <srvMgtEventTime absoluteTime="2022-092T05:35:02" epochTimeSystem="UTC"/>
+ <apertureReference siteRef="Agency01" apertureRef="Aperture01"/>
+</rtltEvent>
+  <commsPlanningInfoEventAssociation associationKind="ViewPeriod" associationId="Aperture01_92">
+    <eventRef ref="Aperture01_92_1"/>
+    <eventRef ref="Aperture01_92_2"/>
+    <eventRef ref="Aperture01_92_3"/>
+    <eventRef ref="Aperture01_92_4"/>
+    <eventRef ref="Aperture01_92_5"/>
+    <eventRef ref="Aperture01_92_6"/>
+    <eventRef ref="Aperture01_92_7"/>
+    <eventRef ref="Aperture01_92_8"/>
+    <eventRef ref="Aperture01_92_9"/>
+    <eventRef ref="Aperture01_92_10"/>
+    <eventRef ref="Aperture01_92_11"/>
+    <eventRef ref="Aperture01_92_12"/>
+    <eventRef ref="Aperture01_92_13"/>
+    <eventRef ref="Aperture01_92_14"/>
+    <eventRef ref="Aperture01_92_15"/>
+    <eventRef ref="Aperture01_92_16"/>
+    <eventRef ref="Aperture01_92_18"/>
+    <eventRef ref="Aperture01_92_19"/>
+    <eventRef ref="Aperture01_92_20"/>
+    <eventRef ref="Aperture01_92_21"/>
+    <eventRef ref="Aperture01_92_22"/>
+    <eventRef ref="Aperture01_92_23"/>
+    <eventRef ref="Aperture01_92_24"/>
+  </commsPlanningInfoEventAssociation>
+</commsPlanningInfoData>
+</commsPlanningInfo>
