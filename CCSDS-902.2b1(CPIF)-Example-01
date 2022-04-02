@@ -1,6 +1,7 @@
 <!-- Example of an XML instance document conforming to the CCSDS Standard 902.2 (Communications Planning Information Format) -->
+<!-- The CCSDS Standard may be retrieved by going to www.ccsds.org and clicking on "Publications" -->
 <!-- The XML schema against which this validates can be found in the SANA (Spacecraft Assigned Numbers Authority) registry for Cross Support service management schemas, located at  https://sanaregistry.org/r/service_management_xml_schemas/  -->
-<!-- This example demonstrates stating communicaiton geometry for a Mars spacecraft being trakced from an aperture on earth and is hypothetical; ie., the numbers shown are not necessarily correct or accurate; rather this to illustrate the structure for exchange in a CCSDS format -->
+<!-- This example demonstrates stating communication geometry for a Mars spacecraft being trakced from an aperture on earth and is hypothetical; ie., the numbers shown are not necessarily correct or accurate; rather this to illustrate the structure for exchange in a CCSDS format -->
 <commsPlanningInfo xmlns="urn:ccsds:schema:cssm:1.0.0"
     xsi:schemaLocation="urn:ccsds:schema:cssm:1.0.0 902x02b1-CommsPlnInfo.xsd"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
